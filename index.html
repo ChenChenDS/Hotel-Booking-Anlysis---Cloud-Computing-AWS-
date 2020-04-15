@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style1.css" title="style" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <title>Visualization on Top GDP countries(Home)</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <h1><a href="index.html">Visualization </a></h1>
+                </div>
+                <!-- logo_text -->
+            </div>
+            <!-- logo -->
+        </div>
+        <!-- header -->
+
+        <div id="site_content">
+            <div class="sidebar">
+                <div class="scrollingBox">
+                    <script src="js/scrollingbox.js">
+                    </script>
+                    <ul class="local">
+                        <li><a href="#header">Back to Top</a></li>
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#data preprocessing">Data Preprocessing</a></li>
+                        <li><a href="#pic1">Data Analysis</a></li>
+                        <li><a href="#pic8">AWS Architecture</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                    </ul>
+                    &nbsp;  
+                    <h4>Data Source</h4>
+                    <ul class="outer">
+                        <li><a href="https://www.kaggle.com/jessemostipak/hotel-booking-demand" target="_blank">Hotel Booking Data</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- sidebar -->
+
+            <div id="content">
+                <h1>Hotel Booking Analysis</h1>
+                <br />
+                    <br />
+                    <h2 id="introduction">Introduction</h2>
+                    <br />
+                    <br />
+                    <h4>
+                        The hotel and hospitality sector caters to millions of travellers everyday. 
+                        Hotel companies always want to optimize their revenue by accurately predict 
+                        demand and price. You must have experience of booking hotels. As a customers, 
+                        you must want to optimize your spending. For the same room, you must prefer to 
+                        pay less. This hotel booking analysis can help us explore some interesting 
+                        outcomes both useful for hotel holders and customers.
+                    </h4>
+                    <br />
+                    <br />
+                    <h2 id="data preprocessing">Data Source</h2>
+                    <br />
+                    <br />
+                    <h4>
+                        <div> Resort Hotel and City Hotel data in 2015-2017</div>
+                        <div> 32 variables</div>
+                        <div> 119391 observations</div>
+                    </h4>
+                    <h2>Data Preprocessing</h2>
+                    <br />
+                    <br />
+                    <h4>
+                        <div> Drop columns with missing value over 90%</div>
+                        <div> Drop rows with missing</div>
+                        <div> Label encoding for categorical value</div>    
+                    </h4>
+                    <br />
+                    <br />
+                    <h2 id="pic1">Hotel type </h2>
+                    <br />
+                    <br />
+                    <img src="image/hotel spread.png" alt="hotel type" width="600" height="400">
+                    <h4><li>2/3 of our data are city hotel and 1/3 are resort hotel.</li></h4>
+                    <br />
+                    <br />
+                    <h2 id="pic2">Hotel loyalty</h2>
+                    <br />
+                    <br />
+                    <img src="image/loyalty.png" alt="hotel type">
+                    <h4>
+                        <li>Resort hotels loyalty member is twice as the loyalty member for city hotels.</li>
+                    </h4>
+                    <br />
+                    <br />
+                    <h2 id="pic3">Hotel booking numbers by month</h2>
+                    <br />
+                    <br />
+                    <img src="image/booking number by month.png" alt="booking number" width="700" height="450">
+                    <h4>
+                        <li>City hotels have two peaks, May and October.</li>
+                        <li>In winter, city hotels have the lowest booking number.</li>
+                        <li>City hotels booking amount in highest season is twice as much as in lowest season.</li>
+                        <li>Resort hotels booking amount fluctuation is small. </li>
+                    </h4>
+                    <br />
+                    <br />
+                    <h2 id="pic4">Hotel room rate by month</h2>
+                    <br />
+                    <br />
+                    <img src="image/booking price by night.png" alt="hotel type" width="700" height="450">
+                    <h4>
+                        <li>City hotels room price in May is the highest.</li>
+                        <li>Resort hotels room rate shows huge increase in the summer vacation period.</li>
+                    </h4>
+                    <br />
+                    <br />
+                    <h2 id="pic5">Booking cancelation rate by month</h2>
+                    <br />
+                    <br />
+                    <img src="image/cancelation by month.png" alt="hotel type" width="700" height="450">
+                    <h4>
+                        <li>City hotels cancelation rate is around 40% yearly round.</li>
+                        <li>Resort hotels cancelation rate is higher in summer.</li>
+                    </h4>
+                    &nbsp;
+                    <h2 id="pic6">Correlation between price and number</h2>
+                    <br />
+                    <br />
+                    <img src="image/correlation two hotel.png" alt="hotel type" width="600" height="450">
+                    <h4>
+                        <li>There is positive correlation between hotel room rate and booking number.</li> 
+                    </h4>
+                    <br />
+                    <br />
+                    <h2 id="pic7">Important features for predict hotel room rate</h2>
+                    <br />
+                    <br />
+                    <img src="image/feature importance.png" alt="hotel type" width="600" height="350">
+                    <br />
+                    <br />                    
+                    <h2 id="pic8">AWS Architecture</h2>
+                    <br />
+                    <br />
+                    <img src="image/architecture.png" alt="architecture" width="600" height="450">
+                    <br />
+                    <br />
+                    <h2>Summarize</h2>
+                    <br />
+                    <br />
+                    <h4>
+                        <li>In summer vacation, travel in cities is more cost-effective than a trip 
+                        to the beach or somewhere else with resort hotels. If you want to travel to 
+                        resort hotels, May and June are better. Also, the November room rate is the 
+                        lowest. But there are always hurricanes in November.</li>
+                        <li>In summer, room cancelation rate for resort hotel is high, so you may
+                            have chance to find some last minute rate.</li>
+                        <li>When you travel to the city in May or October, book your hotel early, 
+                            the room occupancy at these months are high.</li>
+                        <li>If you are a hotel holder, maybe tightening the cancellation policy for 
+                            resort hotels in the summer period, will help to reduce the cancelation rate.
+                            For city hotels, maybe give more benefits for loyalty customers can 
+                            attract more loyalty customers. 
+                        </li>
+                    </h4>
+                    &nbsp;
+            </div>
+            <!-- content -->
+        </div>
+        <!-- site_content -->
+        <div id="contact">
+            <div class="left">
+                <h3>Contact us</h3>
+                &nbsp;
+                <h4> Author: Chen Chen, Lin Hung Chun, Ning Hao
+                    <div><a href="mailto:cicichen0407@gwu.edu">cicichen0407@gwu.edu</a></div>
+                    <div><a href="mailto:hungchun_lin@gwmail.gwu.edu">hungchun_lin@gwmail.gwu.edu</a></div>
+                    <div><a href="mailto:hning@gwmail.gwu.edu">hning@gwmail.gwu.edu</a></div>
+                </h4>
+            </div>
+            <div class="right">
+                <h4>George Washington University
+                <div>Data Science Program</div>
+                <div>Washington D.C.</div>
+                &nbsp;
+                <div>Instructor: Walt Melo</div>
+                </h4>    
+            </div>
+        </div>
+        <div id="footer">
+            <p> Copyright &copy;
+            <script>
+                var d = new Date();
+                document.write(d.getFullYear());
+            </script>
+            | CC | LHG | NH</p>
+        </div>
+        <!-- footer -->
+    </div>
+    <!-- main -->
+</body>
+
+</html>
